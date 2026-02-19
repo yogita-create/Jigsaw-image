@@ -1,0 +1,27 @@
+.jigsaw-piece {
+  position: absolute;
+  cursor: grab;
+  transition: box-shadow 0.2s, transform 0.15s ease-out;
+}
+
+.jigsaw-piece:active {
+  cursor: grabbing;
+  transform: scale(1.03);
+}
+
+.jigsaw-piece img,
+.jigsaw-piece svg {
+  display: block;
+  pointer-events: none;
+}
+
+.jigsaw-piece.placed {
+  filter: drop-shadow(0 0 6px #3f3);
+  animation: placedBlink 0.4s ease-out;
+}
+
+@keyframes placedBlink {
+  0% { filter: drop-shadow(0 0 0px #3f3); }
+  50% { filter: drop-shadow(0 0 15px #3f3); }
+  100% { filter: drop-shadow(0 0 0px #3f3); }
+}

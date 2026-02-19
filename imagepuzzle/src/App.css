@@ -1,0 +1,31 @@
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.puzzle-container {
+  position: relative;
+  border: 2px solid #000;
+  margin-top: 20px;
+}
+
+.tile {
+  position: absolute;
+  border: 1px solid #ccc;
+  cursor: grab;
+  box-sizing: border-box;
+}
+
+.tile.dragging {
+  cursor: grabbing;
+  z-index: 10;
+}
+
+.win-message {
+  font-size: 24px;
+  color: green;
+  margin-top: 10px;
+}
