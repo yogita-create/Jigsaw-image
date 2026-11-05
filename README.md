@@ -28,7 +28,6 @@ A fully responsive and interactive Jigsaw Puzzle Game designed to deliver a seam
 - Implementation of **interactive game logic**
 - Expertise in **responsive web design**
 - Ability to build **user-centric UI/UX**
-- Cross-device compatibility and performance optimization
 
  📌 Future Enhancements
 
